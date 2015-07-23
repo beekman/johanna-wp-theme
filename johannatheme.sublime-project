@@ -1,0 +1,14 @@
+{
+	"folders":
+	[
+		{
+			"folder_exclude_patterns":
+			[
+				".phpintel",
+				"library/src",
+				"library/translation"
+			],
+			"path": "."
+		}
+	]
+}
