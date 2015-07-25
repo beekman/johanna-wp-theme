@@ -998,8 +998,20 @@ h1.logo b {
   letter-spacing: normal;
   padding-top: 2rem;
 }
-/* line 117, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003117}}
+/* line 115, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003115}}
+h1.logo span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/logo.gif);
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+/* line 129, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003129}}
 .tagline {
   padding-left: 1rem;
   position: relative;
@@ -1011,40 +1023,40 @@ h1.logo b {
   font-family: 'Kaushan Script', script;
   vertical-align: bottom;
 }
-/* line 129, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003129}}
+/* line 141, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003141}}
 .tagline a {
   text-decoration: none;
   color: #0d191e;
 }
-/* line 132, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003132}}
+/* line 144, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003144}}
 .tagline a:link,
 .tagline a:hover,
 .tagline a:focus {
   color: #0d191e;
 }
-/* line 137, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003137}}
+/* line 149, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003149}}
 .site-id {
   width: 100%;
-  padding: 0 1rem 0 1rem;
+  padding: 50px 1rem 0 1rem;
   position: relative;
 }
-/* line 144, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003144}}
+/* line 156, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003156}}
 #sitelogo h1 {
   font-size: 2.6rem;
   line-height: 0;
 }
-/* line 149, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003149}}
+/* line 161, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003161}}
 #content .wrap .eightcol .page,
 #content .wrap .eightcol .post {
   margin: 0 0 0 1rem;
 }
-/* line 160, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003160}}
+/* line 172, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003172}}
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 100%;
@@ -1052,45 +1064,45 @@ body {
   background-color: #fdfdfd;
   color: #0d191e;
 }
-/* line 317, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003317}}
+/* line 185, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003185}}
 .wrap {
   width: 100%;
   margin: 0 auto;
 }
-/* line 321, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003321}}
+/* line 189, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003189}}
 .under-posts {
   padding: 0 1rem;
 }
-/* line 330, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003330}}
+/* line 198, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003198}}
 a,
 a:visited {
   color: #3c6a98;
 }
-/* line 334, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003334}}
+/* line 202, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003202}}
 a:hover,
 a:visited:hover,
 a:focus,
 a:visited:focus {
   color: #7eb5f8;
 }
-/* line 339, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003339}}
+/* line 207, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003207}}
 a:active,
 a:visited:active {
   color: #aed1fb;
 }
-/* line 344, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003344}}
+/* line 212, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003212}}
 a:link,
 a:visited:link {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
 }
-/* line 358, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003358}}
+/* line 226, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003226}}
 h1,
 .h1,
 h2,
@@ -1105,8 +1117,8 @@ h5,
   text-rendering: optimizelegibility;
   font-weight: 300;
 }
-/* line 364, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003364}}
+/* line 232, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003232}}
 h1 a,
 .h1 a,
 h2 a,
@@ -1119,36 +1131,36 @@ h5 a,
 .h5 a {
   text-decoration: none;
 }
-/* line 368, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003368}}
+/* line 236, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003236}}
 h1,
 .h1 {
   font-size: 2.5em;
   line-height: 1.333em;
 }
-/* line 372, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003372}}
+/* line 240, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003240}}
 h2,
 .h2 {
   font-size: 1.75em;
   line-height: 1.4em;
   margin-bottom: 0.375em;
 }
-/* line 377, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003377}}
+/* line 245, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003245}}
 h3,
 .h3 {
   font-size: 1.125em;
 }
-/* line 380, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003380}}
+/* line 248, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003248}}
 h4,
 .h4 {
   font-size: 1.1em;
   font-weight: 700;
 }
-/* line 384, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003384}}
+/* line 252, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003252}}
 h5,
 .h5 {
   font-size: 0.846em;
@@ -1156,36 +1168,36 @@ h5,
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-/* line 394, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003394}}
+/* line 262, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003262}}
 .header {
   background-color: white;
 }
-/* line 397, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003397}}
+/* line 265, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003265}}
 .header #inner-header {
   background-color: transparent;
 }
-/* line 404, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003404}}
+/* line 272, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003272}}
 .header nav ul.nav {
   background-color: #7eb5f8;
 }
-/* line 409, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003409}}
+/* line 277, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003277}}
 .header nav ul.nav li a:link,
 .header nav ul.nav li a:visited {
   color: #fdfdfd;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
 }
-/* line 439, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003439}}
+/* line 307, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003307}}
 .nav {
   border: 0px solid #3c6a98;
   border-bottom: 0;
 }
-/* line 444, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003444}}
+/* line 312, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003312}}
 .nav li a {
   display: block;
   text-decoration: none;
@@ -1195,133 +1207,133 @@ h5,
   border-bottom: 0px solid #ccc;
   font-size: 1.1em;
 }
-/* line 475, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003475}}
+/* line 343, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003343}}
 .nav li ul.sub-menu li a,
 .nav li ul.children li a {
   padding-left: 30px;
 }
-/* line 508, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003508}}
+/* line 376, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003376}}
 #content {
   margin-top: 4px;
 }
-/* line 566, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003566}}
+/* line 434, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003434}}
 .byline {
   color: #999;
 }
-/* line 599, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003599}}
+/* line 467, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003467}}
 .entry-content dd {
   margin-left: 0;
   font-size: 0.9em;
   color: #787878;
   margin-bottom: 1.5em;
 }
-/* line 605, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003605}}
+/* line 473, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003473}}
 .entry-content img {
   margin: 0 0 1.5em 0;
   max-width: 100%;
   height: auto;
 }
-/* line 619, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003619}}
+/* line 487, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003487}}
 .entry-content video,
 .entry-content object {
   max-width: 100%;
   height: auto;
 }
-/* line 623, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003623}}
+/* line 491, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003491}}
 .entry-content pre {
   background: #eee;
   border: 1px solid #cecece;
   padding: 10px;
 }
-/* line 631, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003631}}
+/* line 499, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003499}}
 .wp-caption {
   max-width: 100%;
   background: #eee;
   padding: 5px;
 }
-/* line 637, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003637}}
+/* line 505, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003505}}
 .wp-caption img {
   max-width: 100%;
   margin-bottom: 0;
   width: 100%;
 }
-/* line 642, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003642}}
+/* line 510, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003510}}
 .wp-caption p.wp-caption-text {
   font-size: 0.85em;
   margin: 4px 0 7px;
   text-align: center;
 }
-/* line 682, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003682}}
+/* line 550, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003550}}
 .page-navigation,
 .wp-prev-next {
   margin: 1.1em 0 2.2em;
 }
-/* line 686, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003686}}
+/* line 554, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003554}}
 .johanna_page_navi li {
   float: left;
   margin-left: 10px;
 }
-/* line 690, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003690}}
+/* line 558, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003558}}
 .johanna_page_navi li a {
   padding: 3px 6px;
   display: block;
   text-decoration: none;
   position: relative;
 }
-/* line 696, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003696}}
+/* line 564, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003564}}
 .johanna_page_navi li a:hover,
 .johanna_page_navi li a:focus {
   color: #f01d4f;
   text-decoration: underline;
 }
-/* line 704, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003704}}
+/* line 572, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003572}}
 .johanna_page_navi li.bpn-current {
   padding: 3px 6px;
   border-bottom: 2px solid #f01d4f;
   position: relative;
 }
-/* line 720, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003720}}
+/* line 588, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003588}}
 .johanna_page_navi li.bpn-prev-link,
 .johanna_page_navi li.bpn-next-link {
   font-weight: 700;
 }
-/* line 723, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003723}}
+/* line 591, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003591}}
 .johanna_page_navi li.bpn-prev-link a,
 .johanna_page_navi li.bpn-next-link a {
   padding: 0;
 }
-/* line 729, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003729}}
+/* line 597, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003597}}
 .johanna_page_navi li.bpn-prev-link a:hover,
 .johanna_page_navi li.bpn-next-link a:hover,
 .johanna_page_navi li.bpn-first-page-link a:hover,
 .johanna_page_navi li.bpn-last-page-link a:hover {
   background: none;
 }
-/* line 772, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003772}}
+/* line 640, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003640}}
 .wp-prev-next .prev-link {
   float: left;
 }
-/* line 775, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003775}}
+/* line 643, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003643}}
 .wp-prev-next .next-link {
   float: right;
 }
@@ -1330,8 +1342,8 @@ h5,
 //*****************************************************************
 //10. COMMENT STYLES
 //****************************************************************/
-/* line 800, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003800}}
+/* line 668, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003668}}
 .commentlist li {
   position: relative;
   clear: both;
@@ -1340,74 +1352,74 @@ h5,
   margin-bottom: 1.5em;
   padding: 0.7335em 10px;
 }
-/* line 808, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003808}}
+/* line 676, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003676}}
 .commentlist li:last-child {
   margin-bottom: 0;
 }
-/* line 811, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003811}}
+/* line 679, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003679}}
 .commentlist li ul.children {
   margin: 0;
 }
-/* line 840, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003840}}
+/* line 708, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003708}}
 .commentlist li[class*=depth-] {
   margin-top: 1.1em;
 }
-/* line 843, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003843}}
+/* line 711, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003711}}
 .commentlist li.depth-1 {
   margin-left: 0;
   margin-top: 0;
 }
-/* line 847, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003847}}
+/* line 715, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003715}}
 .commentlist li:not(.depth-1) {
   margin-right: -10px;
   margin-left: -10px;
   margin-top: 0;
   padding-bottom: 0;
 }
-/* line 865, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003865}}
+/* line 733, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003733}}
 .commentlist .odd {
   background: #eee;
 }
-/* line 868, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003868}}
+/* line 736, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003736}}
 .commentlist .even {
   background: #fefefe;
 }
-/* line 893, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003893}}
+/* line 761, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003761}}
 .commentlist .vcard {
   margin-left: 50px;
 }
-/* line 896, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003896}}
+/* line 764, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003764}}
 .commentlist .vcard cite.fn {
   font-weight: 700;
   font-style: normal;
 }
-/* line 903, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003903}}
+/* line 771, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003771}}
 .commentlist .vcard time {
   float: right;
 }
-/* line 906, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003906}}
+/* line 774, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003774}}
 .commentlist .vcard time a {
   color: #999;
   text-decoration: none;
 }
-/* line 910, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003910}}
+/* line 778, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003778}}
 .commentlist .vcard time a:hover {
   text-decoration: underline;
 }
-/* line 917, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003917}}
+/* line 785, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003785}}
 .commentlist .vcard img.avatar {
   position: absolute;
   left: 10px;
@@ -1415,20 +1427,20 @@ h5,
   border: 1px solid #cecece;
   background: #fff;
 }
-/* line 939, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003939}}
+/* line 807, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003807}}
 .commentlist .comment_content {
   margin-left: 50px;
 }
-/* line 942, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003942}}
+/* line 810, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003810}}
 .commentlist .comment_content p {
   margin: 0.7335em 0 1.5em;
   font-size: 1em;
   line-height: 1.5em;
 }
-/* line 952, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003952}}
+/* line 820, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003820}}
 .commentlist .comment-reply-link {
   text-decoration: none;
   float: right;
@@ -1440,38 +1452,38 @@ h5,
   font-weight: 700;
   font-size: 0.9em;
 }
-/* line 963, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003963}}
+/* line 831, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003831}}
 .commentlist .comment-reply-link:hover,
 .commentlist .comment-reply-link:focus {
   opacity: 1;
 }
-/* line 977, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003977}}
+/* line 845, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003845}}
 .respond-form {
   margin: 1.5em 10px;
   padding-bottom: 2.2em;
 }
-/* line 981, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003981}}
+/* line 849, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003849}}
 .respond-form form {
   margin: 0.75em 0;
 }
-/* line 984, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003984}}
+/* line 852, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003852}}
 .respond-form form li {
   list-style-type: none;
   clear: both;
   margin-bottom: 0.7335em;
 }
-/* line 989, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003989}}
+/* line 857, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003857}}
 .respond-form form li label,
 .respond-form form li small {
   display: none;
 }
-/* line 993, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003993}}
+/* line 861, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003861}}
 .respond-form form input[type=text],
 .respond-form form input[type=email],
 .respond-form form input[type=url],
@@ -1481,16 +1493,16 @@ h5,
   border: 2px solid #cecece;
   line-height: 1.5em;
 }
-/* line 999, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003999}}
+/* line 867, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003867}}
 .respond-form form input[type=text]:focus,
 .respond-form form input[type=email]:focus,
 .respond-form form input[type=url]:focus,
 .respond-form form textarea:focus {
   background: #fff;
 }
-/* line 1004, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\000031004}}
+/* line 872, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003872}}
 .respond-form form input[type=text]:invalid,
 .respond-form form input[type=email]:invalid,
 .respond-form form input[type=url]:invalid,
@@ -1503,59 +1515,64 @@ h5,
   -ms-box-shadow: none;
   box-shadow: none;
 }
-/* line 1014, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\000031014}}
+/* line 882, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003882}}
 .respond-form form input[type=text],
 .respond-form form input[type=email],
 .respond-form form input[type=url] {
   max-width: 400px;
   min-width: 250px;
 }
-/* line 1018, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\000031018}}
+/* line 886, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003886}}
 .respond-form form textarea {
   resize: none;
   width: 97.3%;
   height: 150px;
 }
-/* line 1031, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\000031031}}
+/* line 899, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003899}}
 #comment-form-title {
   margin: 0 0 1.1em;
 }
-/* line 1046, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\000031046}}
+/* line 914, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003914}}
 #allowed_tags {
   margin: 1.5em 10px 0.7335em 0;
 }
-/* line 1051, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\000031051}}
+/* line 919, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003919}}
 .nocomments {
   margin: 0 20px 1.1em;
 }
-/* line 1082, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\000031082}}
+/* line 926, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003926}}
+.sidebar {
+  padding: 0 1rem;
+}
+/* line 951, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003951}}
 footer.footer .wrap p.source-org {
   text-align: center;
   color: #6ba6bf;
 }
-/* line 1086, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\000031086}}
+/* line 955, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003955}}
 footer.footer .nav {
   background-color: #7eb5f8;
 }
-/* line 1089, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\000031089}}
+/* line 958, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003958}}
 footer.footer .nav li a {
   color: #0d191e;
 }
-/* line 1092, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\000031092}}
+/* line 961, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003961}}
 footer.footer .nav li a:hover {
   background-color: rgba(255, 255, 255, 0.225);
 }
-/* line 1098, /Users/djbeeker/github/johannatheme/library/less/_base.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\000031098}}
+/* line 967, /Users/djbeeker/github/johannatheme/library/less/_base.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_base\.less}line{font-family:\00003967}}
 .footer {
   clear: both;
 }
@@ -1593,20 +1610,8 @@ upon your base.less styles.
     font-size: 3.4rem;
     overflow: hidden;
   }
-  /* line 29, /Users/djbeeker/github/johannatheme/library/less/_481up.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_481up\.less}line{font-family:\0000329}}
-  h1.logo span {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/logo.gif);
-    background-attachment: scroll;
-    background-clip: border-box;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-  }
-  /* line 41, /Users/djbeeker/github/johannatheme/library/less/_481up.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_481up\.less}line{font-family:\0000341}}
+  /* line 31, /Users/djbeeker/github/johannatheme/library/less/_481up.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_481up\.less}line{font-family:\0000331}}
   .tagline {
     font-size: 2.75rem;
   }
@@ -1614,27 +1619,27 @@ upon your base.less styles.
 NAVIGATION STYLES
 *********************/
   /* .menu is clearfixed inside mixins.scss */
-  /* line 53, /Users/djbeeker/github/johannatheme/library/less/_481up.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_481up\.less}line{font-family:\0000353}}
+  /* line 43, /Users/djbeeker/github/johannatheme/library/less/_481up.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_481up\.less}line{font-family:\0000343}}
   .menu {
     /* end .menu ul */
   }
-  /* line 54, /Users/djbeeker/github/johannatheme/library/less/_481up.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_481up\.less}line{font-family:\0000354}}
+  /* line 44, /Users/djbeeker/github/johannatheme/library/less/_481up.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_481up\.less}line{font-family:\0000344}}
   .menu ul {
     /* end .menu ul li */
     /* highlight current page */
     /* end current highlighters */
   }
-  /* line 55, /Users/djbeeker/github/johannatheme/library/less/_481up.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_481up\.less}line{font-family:\0000355}}
+  /* line 45, /Users/djbeeker/github/johannatheme/library/less/_481up.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_481up\.less}line{font-family:\0000345}}
   .menu ul li {
     /*
 plan your menus and drop-downs wisely.
 */
   }
-  /* line 56, /Users/djbeeker/github/johannatheme/library/less/_481up.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_481up\.less}line{font-family:\0000356}}
+  /* line 46, /Users/djbeeker/github/johannatheme/library/less/_481up.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_481up\.less}line{font-family:\0000346}}
   .menu ul li a {
     color: #3c6a98;
     background-color: rgba(0, 0, 0, 0.225);
@@ -1643,8 +1648,8 @@ plan your menus and drop-downs wisely.
 	has the possibility of being a mobile device.
 	*/
   }
-  /* line 63, /Users/djbeeker/github/johannatheme/library/less/_481up.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_481up\.less}line{font-family:\0000363}}
+  /* line 53, /Users/djbeeker/github/johannatheme/library/less/_481up.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_481up\.less}line{font-family:\0000353}}
   .menu ul li a:hover,
   .menu ul li a:focus {
     color: #7eb5f8;
@@ -1655,29 +1660,29 @@ plan your menus and drop-downs wisely.
 POSTS & CONTENT STYLES
 *********************/
   /* entry content */
-  /* line 103, /Users/djbeeker/github/johannatheme/library/less/_481up.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_481up\.less}line{font-family:\00003103}}
+  /* line 93, /Users/djbeeker/github/johannatheme/library/less/_481up.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_481up\.less}line{font-family:\0000393}}
   .entry-content {
     /* at this larger size, we can start to align images */
   }
-  /* line 107, /Users/djbeeker/github/johannatheme/library/less/_481up.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_481up\.less}line{font-family:\00003107}}
+  /* line 97, /Users/djbeeker/github/johannatheme/library/less/_481up.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_481up\.less}line{font-family:\0000397}}
   .entry-content .alignleft,
   .entry-content img.alignleft {
     margin-right: 1.5em;
     display: inline;
     float: left;
   }
-  /* line 112, /Users/djbeeker/github/johannatheme/library/less/_481up.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_481up\.less}line{font-family:\00003112}}
+  /* line 102, /Users/djbeeker/github/johannatheme/library/less/_481up.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_481up\.less}line{font-family:\00003102}}
   .entry-content .alignright,
   .entry-content img.alignright {
     margin-left: 1.5em;
     display: inline;
     float: right;
   }
-  /* line 117, /Users/djbeeker/github/johannatheme/library/less/_481up.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_481up\.less}line{font-family:\00003117}}
+  /* line 107, /Users/djbeeker/github/johannatheme/library/less/_481up.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/djbeeker\/github\/johannatheme\/library\/less\/_481up\.less}line{font-family:\00003107}}
   .entry-content .aligncenter,
   .entry-content img.aligncenter {
     margin-right: auto;
@@ -2107,7 +2112,7 @@ on larger screens.
     display: inline;
     font-size: 3.4rem;
     right: 2rem;
-    top: 75px;
+    top: 85px;
   }
 }
 /*

@@ -3,9 +3,15 @@
 
               <article id="post-<?php the_ID(); ?>" <?php post_class('cf'); ?> role="article" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
 
- 		<?php if (is_single( $post )) { ?>
- 			<div style="float:right; margin: 0 0 1em 1em;"> <?php the_post_thumbnail('johanna-thumb-600'); ?></div>
- 		<?php endif ?>
+ 		<?php if (is_single( $post )): ?>
+ 			<div style="float:right; margin: 0 0 1em 1em;">
+ 				<?php the_post_thumbnail('johanna-thumb-600'); ?>
+ 			</div>
+ 		<?php else: ?>
+ 			<div style="float:right; margin: 0 0 1em 1em;">
+ 				<?php the_post_thumbnail('johanna-thumb-300'); ?>
+ 			</div>
+ 		<?php endif; ?>
                 <header class="article-header entry-header">
 
                   <h1 class="entry-title single-title" itemprop="headline" rel="bookmark"><?php the_title(); ?></h1>

@@ -139,15 +139,16 @@ function johanna_scripts_and_styles() {
   		wp_enqueue_script( 'comment-reply' );
   	}
 
-  	wp_register_style('meanmenu', get_template_directory() . '/library/css/meanmenu.css', array(), '', 'all' );
+  	wp_register_style('meanmenu', get_template_directory_uri() . '/library/css/meanmenu.css', array(), '', 'all' );
 
   	wp_register_script(
   	                   'meanmenu',
-  	                   get_template_directory() . 'library/js/libs/jquery.meanmenu.js',
+  	                    get_template_directory_uri() . '/library/js/libs/jquery.meanmenu.min.js',
   	                   array('jquery'),
   	                   1,
   	                   FALSE
   	                   );
+
 	//adding scripts file in the footer
   	wp_register_script( 'johanna-js', get_stylesheet_directory_uri() . '/library/js/scripts.js', array( 'jquery' ), '', true );
 
