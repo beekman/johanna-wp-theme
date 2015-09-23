@@ -6,11 +6,11 @@ Template Name: No Sidebars
 
 <?php get_header(); ?>
 
-            <div id="content">
+			<div id="content">
 
-                <div id="inner-content" class="wrap clearfix">
+				<div id="inner-content" class="wrap cf">
 
-                        <div id="main" class="twelvecol first clearfix" role="main">
+						<main id="main" class="m-all t-all d-all cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 
                             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -52,12 +52,11 @@ Template Name: No Sidebars
 
                             <?php endif; ?>
 
-                        </div> <!-- end #main
+					</main>
 
-                        <?php get_sidebar(); ?> -->
+				</div>
 
-                </div> <!-- end #inner-content -->
+			</div>
 
-            </div> <!-- end #content -->
 
 <?php get_footer(); ?>

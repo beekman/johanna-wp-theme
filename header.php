@@ -36,6 +36,7 @@
 
 <!--drop Google Fonts here-->
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
 <!-- end Google Fonts -->
 
 <!-- drop Google Analytics Here -->

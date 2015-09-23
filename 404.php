@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 
-            <div id="content">
+			<div id="content">
 
-                <div id="inner-content" class="wrap clearfix">
+				<div id="inner-content" class="wrap cf">
 
-                    <div id="main" class="eightcol first clearfix" role="main">
+						<main id="main" class="m-all t-2of3 d-5of7 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 
                         <article id="post-not-found" class="hentry clearfix">
 
@@ -34,10 +34,14 @@
 
                         </article> <!-- end article -->
 
-                    </div> <!-- end #main -->
+			</main>
 
-                </div> <!-- end #inner-content -->
+					<?php get_sidebar(); ?>
 
-            </div> <!-- end #content -->
+		</div>
+
+	</div>
+
 
 <?php get_footer(); ?>
+

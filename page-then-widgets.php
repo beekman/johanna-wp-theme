@@ -6,11 +6,11 @@ Template Name: Page then Widgets
 
 <?php get_header(); ?>
 
-            <div id="content">
+			<div id="content">
 
-                <div id="inner-content" class="wrap clearfix">
+				<div id="inner-content" class="wrap cf">
 
-                        <div id="main" class="eightcol first clearfix" role="main">
+						<main id="main" class="m-all t-2of3 d-5of7 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 
                             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -53,12 +53,14 @@ Template Name: Page then Widgets
                         echo '<div id="under-posts" class="under-posts"><ul>' ;
                         dynamic_sidebar('under-posts');
                          echo '</ul></div>' ; ?>
-                        </div> <!-- end #main -->
+					</main>
 
-                        <?php get_sidebar('sidebar1'); ?>
+					<?php get_sidebar(); ?>
 
-                </div> <!-- end #inner-content -->
+				</div>
 
-            </div> <!-- end #content -->
+			</div>
+
 
 <?php get_footer(); ?>
+
