@@ -9,7 +9,7 @@
                             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
                             <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
-                                              <div style="float:right; margin-left: 1em;"> <?php the_post_thumbnail('johanna-thumb-300'); ?></div>
+                                              <div style="float:right; margin-left: 1em; margin-top: 2rem;"> <?php the_post_thumbnail('johanna-thumb-300'); ?></div>
 
                                 <header class="article-header">
 

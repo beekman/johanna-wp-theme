@@ -9,9 +9,8 @@
                             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
                             <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
-					<div style="float:right; margin-left: 1em;"> <?php the_post_thumbnail('johanna-thumb-300'); ?></div>
                                 <header class="article-header">
-
+                                	<div class="alignright" style="margin-top: 1.5rem;"> <?php the_post_thumbnail('medium'); ?></div>
                                     <h1 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
                                     <p class="byline vcard"><?php
                                         printf(__('Posted <time class="updated" datetime="%1$s" pubdate>%2$s</time> by <span class="author">%3$s</span> <span class="amp">&</span> filed under %4$s.', 'johannatheme'), get_the_time('Y-m-j'), get_the_time(get_option('date_format')), johanna_get_the_author_posts_link(), get_the_category_list(', '));

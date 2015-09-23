@@ -122,57 +122,57 @@ SCRIPTS & ENQUEUEING
 
 // loading modernizr and jquery, and reply script
 function johanna_scripts_and_styles() {
-  global $wp_styles; // call global $wp_styles variable to add conditional wrapper around ie stylesheet the WordPress way
-  if (!is_admin()) {
+	global $wp_styles; // call global $wp_styles variable to add conditional wrapper around ie stylesheet the WordPress way
+	if (!is_admin()) {
 
-	// modernizr (without media query polyfill)
-  	wp_register_script( 'johanna-modernizr', get_stylesheet_directory_uri() . '/library/js/libs/modernizr.custom.min.js', array(), '2.5.3', false );
+		// modernizr (without media query polyfill)
+		wp_register_script( 'johanna-modernizr', get_stylesheet_directory_uri() . '/library/js/libs/modernizr.custom.min.js', array(), '2.5.3', false );
 
-	// register main stylesheet
-  	wp_register_style( 'johanna-stylesheet', get_stylesheet_directory_uri() . '/library/css/style.css', array(), '', 'all' );
+			// register main stylesheet
+		wp_register_style( 'johanna-stylesheet', get_stylesheet_directory_uri() . '/library/css/style.css', array(), '', 'all' );
 
-	// ie-only style sheet
-  	wp_register_style( 'johanna-ie-only', get_stylesheet_directory_uri() . '/library/css/ie.css', array(), '' );
+			// ie-only style sheet
+		wp_register_style( 'johanna-ie-only', get_stylesheet_directory_uri() . '/library/css/ie.css', array(), '' );
 
-	// comment reply script for threaded comments
-  	if ( is_singular() AND comments_open() AND (get_option('thread_comments') == 1)) {
-  		wp_enqueue_script( 'comment-reply' );
-  	}
+			// comment reply script for threaded comments
+		if ( is_singular() AND comments_open() AND (get_option('thread_comments') == 1)) {
+			wp_enqueue_script( 'comment-reply' );
+		}
 
-  	wp_register_style('meanmenu', get_template_directory_uri() . '/library/css/meanmenu.css', array(), '', 'all' );
+		wp_register_style('meanmenu', get_template_directory_uri() . '/library/css/meanmenu.css', array(), '', 'all' );
 
-  	wp_register_script(
-  	                   'meanmenu',
-  	                    get_template_directory_uri() . '/library/js/libs/jquery.meanmenu.min.js',
-  	                   array('jquery'),
-  	                   1,
-  	                   FALSE
-  	                   );
+		wp_register_script(
+		                   'meanmenu',
+		                   get_template_directory_uri() . '/library/js/libs/jquery.meanmenu.min.js',
+		                   array('jquery'),
+		                   1,
+		                   FALSE
+		                   );
 
-	//adding scripts file in the footer
-  	wp_register_script( 'johanna-js', get_stylesheet_directory_uri() . '/library/js/scripts.js', array( 'jquery' ), '', true );
+			//adding scripts file in the footer
+		wp_register_script( 'johanna-js', get_stylesheet_directory_uri() . '/library/js/scripts.js', array( 'jquery' ), '', true );
 
-	// enqueue styles and scripts
-  	wp_enqueue_script( 'johanna-modernizr' );
-  	wp_enqueue_style( 'johanna-stylesheet' );
-  	wp_enqueue_style('johanna-ie-only');
+			// enqueue styles and scripts
+		wp_enqueue_script( 'johanna-modernizr' );
+		wp_enqueue_style( 'johanna-stylesheet' );
+		wp_enqueue_style('johanna-ie-only');
 
-	$wp_styles->add_data( 'johanna-ie-only', 'conditional', 'lt IE 9' ); // add conditional wrapper around ie stylesheet
+			$wp_styles->add_data( 'johanna-ie-only', 'conditional', 'lt IE 9' ); // add conditional wrapper around ie stylesheet
 
-	wp_enqueue_style( 'meanmenu' ); //mobile menu styling
-	/*
-	I recommend using a plugin to call jQuery
-	using the google cdn. That way it stays cached
-	and your site will load faster.
-	*/
-	wp_enqueue_script( 'jquery' );
+			wp_enqueue_style( 'meanmenu' ); //mobile menu styling
+			/*
+			I recommend using a plugin to call jQuery
+			using the google cdn. That way it stays cached
+			and your site will load faster.
+			*/
+			wp_enqueue_script( 'jquery' );
 
-	wp_enqueue_script('meanmenu');
+			wp_enqueue_script('meanmenu');
 
-	wp_enqueue_script( 'johanna-js' );
+			wp_enqueue_script( 'johanna-js' );
+	} //endif
 
-}
-}
+} //end function
 
 /*********************
 THEME SUPPORT

@@ -11,9 +11,22 @@ extra styles on that same mobile connection.
 
 A word of warning. This size COULD be a larger mobile device,
 so you still want to keep it pretty light and simply expand
-upon your base.less styles.
+upon your base.scss styles.
 
 ******************************************************************/
+
+/*
+IMPORTANT NOTE ABOUT SASS 3.3 & UP
+You can't use @extend within media queries
+anymore, so just be aware that if you drop
+them in here, they won't work.
+*/
+
+
+/*********************
+NAVIGATION STYLES
+*********************/
+
 h1.logo {
 	height: 125px;
 	width: 250px;
@@ -44,15 +57,15 @@ NAVIGATION STYLES
 	ul {
 		li {
 			a {
-				color: @red-dk;
-				background-color: @tintdark;
+				color: $red-dk;
+				background-color: $tintdark;
 	/*
 	you can use hover styles here even though this size
 	has the possibility of being a mobile device.
 	*/
 	&:hover, &:focus {
-		color: @red-lt;
-		background-color: @tintlight;
+		color: $red-lt;
+		background-color: $tintlight;
 	}
 }
 

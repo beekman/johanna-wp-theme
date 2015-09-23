@@ -1,3 +1,16 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Tablet & Small Desktop Stylesheet
+
+Here's where you can start getting into the good stuff.
+This size will work on iPads, other tablets, and desktops.
+So you can start working with more styles, background images,
+and other resources. You'll also notice the grid starts to
+come into play. Have fun!
+
+******************************************************************/
 /*********************
 GENERAL STYLES
 *********************/
@@ -67,11 +80,11 @@ NAVIGATION STYLES
 			position: relative;
 
 			a {
-				color: @white;
+				color: $white;
 
 				&:hover, &:focus {
-					color: @goldenrod;
-					background-color: darken(@red, 15%);
+					color: $goldenrod;
+					background-color: darken($red, 15%);
 				}
 			}
 			&:first-child {
@@ -96,15 +109,15 @@ NAVIGATION STYLES
 						border-right: 0;
 						display: block;
 						width: 180px;
-						border-bottom: 1px solid @white;
+						border-bottom: 1px solid $white;
 
 						&:link, &:visited {
-							background-color: @goldenrod;
-							color: darken(@red-dk, 15%);
+							background-color: $goldenrod;
+							color: darken($red-dk, 15%);
 						}
 						&:hover, &:focus, &:active {
-							background-color: @red;
-							color: @goldenrod;
+							background-color: $red;
+							color: $goldenrod;
 						}
 					}
 					&:first-child {
@@ -152,7 +165,7 @@ SIDEBARS & ASIDES
 
 .sidebar {
 	margin-top: 1em;
-	border-left: 1px solid @red-dk;
+	border-left: 1px solid $red-dk;
 }
 
 .widgettitle {

@@ -8,9 +8,10 @@ You can add some advanced styles here if you like. This kicks in
 on larger screens.
 
 ******************************************************************/
-.wrap{
-  width: 99%;
-  max-width: 1680px; //make sure we don't get TOO wide on big displays
+
+.wrap {
+	max-width: 1680px; //make sure we don't get TOO wide on big displays
+	width: 99%;
 }
 
 .nav li a {
@@ -18,18 +19,17 @@ on larger screens.
 }
 
 h1.logo {
-height: 150px;
-display: inline-block;
-position: relative;
-width: 299px;
-font-size: 5.35rem;
+	display: inline-block;
+	font-size: 5.35rem;
+	height: 150px;
+	position: relative;
+	width: 299px;
 }
 
 .tagline {
-  position: absolute;
-  display: inline;
-  font-size: 3.4rem;
-  right: 2rem;
-  top: 85px;
+	display: inline;
+	font-size: 3.4rem;
+	position: absolute;
+	right: 2rem;
+	top: 85px;
 }
-

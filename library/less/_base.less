@@ -26,9 +26,42 @@ and will be used across all viewports.
 13. FOOTER STYLES
 
 ******************************************************************/
-@import url(http://fonts.googleapis.com/css?family=Nothing+You+Could+Do&text=J);
 @import url(http://fonts.googleapis.com/css?family=Kaushan+Script);
 
+.style-four .testimonials-meta {
+	margin: 20px 15px 0.2rem;
+}
+
+#content .style-four .testimonials-content {
+    background: white(0.5) none repeat scroll 0% 0%;
+    border: 1px solid white(0.7);
+    box-shadow: 0px 1px 1px black(0.1);
+    display: block;
+    padding: 0 1rem;
+    position: relative;
+    font-family: @sans-serif;
+}
+
+.sidebar {
+	min-width: 300px;
+	margin: 0;
+	margin: 0;
+
+	.widget {
+		padding: 0;
+		margin: 0;
+	}
+}
+
+.home .entry-image {
+	float: none;
+	padding-right: 0;
+}
+
+.entry-image {
+	float:left;
+	padding-right: 1rem;
+}
 
 .wp-playlist-item>.wp-playlist-caption {
 	white-space: normal;
@@ -75,7 +108,7 @@ div.post div.entry-utility {
 header.article-header p.byline {
 }
 #inner-content {
-	background-color: @white;
+	// background-color: @white;
 }
 // hide homepage title
 .home .article-header h1.page-title {
@@ -87,8 +120,8 @@ header.article-header p.byline {
 
 //site banner formatting
 h1.logo > b:nth-child(2)::first-letter { //for the plain text rendering of the "J"
-		font-family: "Nothing You Could Do",cursive;
-		font-size: 8.4rem;
+		// font-family: "Nothing You Could Do",cursive;
+		font-size: 6.4rem;
 		letter-spacing: -2.5rem; //tucks "ohanna" closer to the J
 }
 
@@ -109,6 +142,7 @@ h1.logo { //display styled text placeholder/no images logo-covered by logo
 	font-weight: normal;
 	letter-spacing: normal;
 	padding-top: 2rem;
+	margin:-9999px;
 	}
 }
 
@@ -118,7 +152,7 @@ h1.logo span { //image overlaid on top of text heading
 position: absolute;
 width: 100%;
 height: 100%;
-background-image: url(../images/logo.gif);
+background-image: url(../images/logo-johanna-yellow.gif);
 background-attachment: scroll;
 background-clip: border-box;
 background-size: 100% 100%;
@@ -133,22 +167,32 @@ background-repeat: no-repeat;
 	display: inline-block;
 	font-size: 1.8rem;
 	text-align: right;
-	color: @blue-dk;
 	font-family: 'Kaushan Script', script;
 	vertical-align: bottom;
-}
 
-.tagline a {
-	text-decoration: none;
-	color: @black;
-	&:link, &:hover, &:focus {
-		color: @black;
+	a {
+		color: @goldenrod;
+
+		&:link, &:visited {
+			color:  @goldenrod;
+			text-decoration: none;
+		}
+
+		&:hover, &:focus, &:active, &:visited:hover,  &:visited:focus {
+			color: lighten(@goldenrod,8%);
+			text-decoration: none;
+		}
 	}
 }
 
+// .tagline a:visited:focus, .tagline a:visited:hover {
+// 	color: lighten(@goldenrod,15%);
+// 	text-decoration: none;
+// }
+
 .site-id {
 	width:100%;
-	padding: 50px 1rem 0 1rem; //push logo and tagline down to compensate for mobile menu
+	margin: 1rem; //give logo and tagline some breathing room
 	position: relative;
 }
 // fixes vertical positioning for logo
@@ -193,15 +237,17 @@ body {
 // ********************
 a, a:visited {
 	color: @link-color;
+	text-decoration: none;
 
 	 // on hover
 	&:hover, &:focus {
 		color: @link-hover;
+		text-decoration: underline;
 	}
 
 	 // on click
 	&:active {
-		color: lighten(@link-hover, 10%);
+		color: darken(@link-hover, 10%);
 	}
 
 	 // mobile tap color
@@ -232,6 +278,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 h1, .h1 {
 	font-size: 2.5em;
 	line-height: 1.333em;
+	font-weight: bold;
 }
 h2, .h2 {
 	font-size: 1.75em;
@@ -256,7 +303,10 @@ h5, .h5 {
 // 06. HEADER STYLES
 // ********************
 .header {
-	background-color: white;
+	background-color: @red;
+	background-image: url(../images/back-cover-banner.jpg);
+	background-size: cover;
+
 
 	#inner-header {
 		background-color: transparent;
@@ -266,17 +316,17 @@ h5, .h5 {
 	}
 	nav {
 		ul.nav {
-			background-color: @blue-lt;
+			background-color: transparent;
 
 			li {
 				a {
 					&:link, &:visited {
-						color: @white;
+						color: @goldenrod;
 							// this highlights links on iPhones/iPads.
 							// so it basically works like the :hover selector
 							// for mobile devices.
 
-						-webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
+						-webkit-tap-highlight-color: rgba(255, 255, 255, 0.3);
 					}
 				}
 				&:first-child {
@@ -301,7 +351,7 @@ h5, .h5 {
 
 
 .nav {
-	border: 0px solid @blue-dk;
+	border: 0px solid @red-dk;
 	border-bottom: 0;
 
 	li {
@@ -370,7 +420,7 @@ h5, .h5 {
 //*******************
 
 #content {
-	margin-top: 4px;
+	margin-top: 0;
 
 	#inner-content {
 	}
@@ -494,7 +544,7 @@ h5, .h5 {
 // end .entry-content
 .wp-caption {
 	max-width: 100%;
-	background: #eee;
+	background: lighten(@goldenrod, 10%);
 	padding: 5px;
 
 	// images inside wp-caption
@@ -509,7 +559,6 @@ h5, .h5 {
 		text-align: center;
 	}
 }
-
 // end .wp-caption
 
 // image gallery styles
@@ -838,6 +887,12 @@ h5, .h5 {
 // 11. COMMENT FORM STYLES
 //****************************************************************
 
+.wpcf7-text, .wpcf7-textarea {
+	width: 100%;
+}
+
+.wpcf7-textarea {}
+
 .respond-form {
 	margin: 1.5em 10px;
 	padding-bottom: 2.2em;
@@ -856,9 +911,10 @@ h5, .h5 {
 		}
 		input[type=text], input[type=email], input[type=url], textarea {
 			padding: 3px 6px;
-			background: #efefef;
-			border: 2px solid #cecece;
+			background: @white;
+			border: 2px solid darken(@goldenrod, 20%);
 			line-height: 1.5em;
+			width: 100%;
 
 			&:focus {
 				background: #fff;
@@ -889,6 +945,9 @@ h5, .h5 {
 
 // comment submit button
 #submit {
+	background-color: lighten(@goldenrod, 10%);
+	padding: 0.3rem 0.5rem;
+	float: right;
 }
 
 // comment form title
