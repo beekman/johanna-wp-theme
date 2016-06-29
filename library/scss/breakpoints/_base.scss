@@ -16,14 +16,14 @@ GENERAL STYLES
 *********************/
 
 body {
-	font-family: $lato;
+	font-family: $sans-serif;
 	font-size: 100%;
 	line-height: 1.5;
 	color: $text-color;
-	background-color: $gray;
   	-webkit-font-smoothing: antialiased;
   	-moz-osx-font-smoothing: grayscale;
 }
+
 
 .style-four .testimonials-meta {
 	margin: 20px 15px 0.2rem;
@@ -42,7 +42,7 @@ body {
 .sidebar {
 	min-width: 300px;
 	margin: 0;
-	margin: 0;
+	padding: 0;
 
 	.widget {
 		padding: 0;
@@ -223,9 +223,11 @@ body {
 	width: 100%;
 	margin: 0 auto;
 }
+
 .under-posts {
 	padding: 0 1rem;
 }
+
 #container {
 }
 
@@ -316,7 +318,9 @@ h5, .h5 {
 			background-color: transparent;
 
 			li {
+
 				a {
+
 					&:link, &:visited {
 						color: $goldenrod;
 							// this highlights links on iPhones/iPads.
@@ -331,6 +335,11 @@ h5, .h5 {
 				&:last-child {
 				}
 			}
+			.current-menu-item a {
+					&:link, &:visited {
+						color: lighten($goldenrod, 35%);
+					}
+				}
 		}
 	}
 }
@@ -380,10 +389,10 @@ style a page via class
 LAYOUT & GRID STYLES
 *********************/
 
-.wrap {
-	width: 96%;
-	margin: 0 auto;
-}
+// .wrap {
+// 	width: 96%;
+// 	margin: 0 auto;
+// }
 
 /*********************
 LINK STYLES
@@ -462,9 +471,9 @@ h5, .h5 {
 HEADER STYLES
 *********************/
 
-.header {
-	background-color: $black;
-}
+// .header {
+// 	background-color: $black;
+// }
 
 	#logo {
 		margin: 0.75em 0;
@@ -486,75 +495,74 @@ the navs on the site so our css is cleaner
 and more scalable.
 */
 
+// ********************
+// 07. NAVIGATION STYLES
+// ********************
+
+
+// all navs have a .nav class applied via
+// the wp_menu function; this is so we can
+// easily write one group of styles for
+// the navs on the site so our css is cleaner
+// and more scalable.
+
+
 .nav {
+	border: 0px solid $red-dk;
 	border-bottom: 0;
-	margin: 0;
 
 	li {
-
 		a {
+			background-color: transparent;
+			border-bottom: 0px solid transparent;
 			display: block;
-			color: $white;
+			font-size: 1.1em;
+			margin-bottom: 0;
 			text-decoration: none;
-			padding: 0.75em;
+			padding: 0px 10px;
+			// remember this is for mobile ONLY, so there's no need
+			// to even declare hover styles here, you can do it in
+			// the style.scss file where it's relevant.
 
-			/*
-			remember this is for mobile ONLY, so there's no need
-			to even declare hover styles here, you can do it in
-			the style.scss file where it's relevant. We want to
-			keep this file as small as possible!
-			*/
 			&:hover, &:focus {
-
 			}
 		}
+		&:first-child {
+		}
+		&:last-child {
+		}
 
-		&:first-child {}
-
-		&:last-child {}
-
-		/*
-		so you really have to rethink your dropdowns for mobile.
-		you don't want to have it expand too much because the
-		screen is so small. How you manage your menu should
-		depend on the project. Here's some great info on it:
-		http://www.alistapart.com/articles/organizing-mobile/
-		*/
-		ul.sub-menu,
-		ul.children {
-
+		// http://www.alistapart.com/articles/organizing-mobile/
+		ul.sub-menu, ul.children {
 			li {
-
 				a {
 					padding-left: 30px;
 
-					&:hover,
-					&:focus {}
-
-					&:link {}
-
+					&:hover, &:focus {
+					}
+					&:link {
+					}
 				}
-
-				&:first-child {}
-
-				&:last-child {}
-
+				&:first-child {
+				}
+				&:last-child {
+				}
 			}
-
 		}
+	}
 
-	} /* end .menu li */
+	// end .menu li
 
-	/* highlight current page */
-	li.current-menu-item,
-	li.current_page_item,
-	li.current_page_ancestor {
+	// highlight current page
+	li.current-menu-item, li.current_page_item, li.current_page_ancestor {
+		a {
+		}
+	}
 
-		a {}
+	// end current highlighters
+}
 
-	}  /* end current highlighters */
-
-} /* end .nav */
+// end .nav
 
 
 /*********************
@@ -566,19 +574,18 @@ POSTS & CONTENT STYLES
 }
 
 		.hentry {
-			background-color: $white;
 			border-radius: 3px;
 			margin-bottom: 1.5em;
-			border: 1px solid $border-color;
+			border: 0px solid $border-color;
 
 			header {
-				border-bottom: 1px solid $light-gray;
-				padding: 1.5em;
+				// border-bottom: 1px solid $light-gray;
+				//padding: 1.5em;
 			}
 
 			footer {
-				padding: 1.5em;
-				border-top: 1px solid $light-gray;
+				//padding: 1.5em;
+				// border-top: 1px solid $light-gray;
 
 				p {
 					margin: 0;

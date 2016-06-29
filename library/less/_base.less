@@ -26,10 +26,26 @@ and will be used across all viewports.
 13. FOOTER STYLES
 
 ******************************************************************/
+
+dl.gallery-item {
+	float: left;
+	margin: 1rem;
+}
+
 @import url(http://fonts.googleapis.com/css?family=Kaushan+Script);
 
+.past-events .css-events-list {
+	color: #aeaeae;
+	a {
+		&:hover, &:active, &:visited, &:link {
+			color: #aeaeae;
+		}
+	}
+}
+
+
 .style-four .testimonials-meta {
-	margin: 20px 15px 0.2rem;
+	margin: 0.5rem 1.5rem 1.5rem;
 }
 
 #content .style-four .testimonials-content {
@@ -573,22 +589,14 @@ h5, .h5 {
 	}
 	dd {
 	}
+
+
+	// gallery caption styles
+	.gallery-caption {
+	}
 }
 
 // end .gallery
-
-// gallery caption styles
-.gallery-caption {
-}
-.size-full {
-}
-.size-large {
-}
-.size-medium {
-}
-.size-thumbnail {
-}
-
 //*****************************************************************
 //09. PAGE NAVI STYLES
 //****************************************************************

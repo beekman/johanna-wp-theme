@@ -2,7 +2,7 @@
 
 				<div id="inner-footer" class="wrap clearfix">
 
-					<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>. <a href="https://www.facebook.com/johannabeekmanmusic" target="_blank">Visit Johanna's Facebook page</a></p>
+					<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>.</p>
 
 				</div> <!-- end #inner-footer -->
 

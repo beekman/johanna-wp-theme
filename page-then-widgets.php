@@ -10,7 +10,7 @@ Template Name: Page then Widgets
 
 				<div id="inner-content" class="wrap cf">
 
-						<main id="main" class="m-all t-2of3 d-5of7 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+						<main id="main" class="m-all t-1of2 d-3of5 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 
                             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -51,7 +51,7 @@ Template Name: Page then Widgets
 
                             <?php endif;
                         echo '<div id="under-posts" class="under-posts"><ul>' ;
-                        dynamic_sidebar('under-posts');
+                        	dynamic_sidebar('under-posts');
                          echo '</ul></div>' ; ?>
 					</main>
 
