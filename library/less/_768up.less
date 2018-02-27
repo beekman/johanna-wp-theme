@@ -2,8 +2,8 @@
 GENERAL STYLES
 *********************/
 body {
-	background: url(../images/bg2.jpg) left top scroll repeat-y;
-	background-size: contain;
+	// background: url(../images/bg2.jpg) left top scroll repeat-y;
+	// background-size: contain;
 }
 
 /*********************
@@ -13,22 +13,33 @@ LAYOUT & GRID STYLES
 .site-id {
 	width: 100%;
 	position: relative;
-	padding: 1rem 0 1rem 0;
+	height: 114px;
+	margin-top: 0;
 }
 
-h1.logo b{
-	height: 140px;
-	width: 279px;
-font-size: 3.9rem; //h1 size = logo size
-// margin-left: 1rem; //align image/text with container/menu
+h1.logo {
+	margin-top: 0;
+
+	span {
+		width: 380px;
+		height: 95px;
+	}
+
+	b {
+		display: none;
+		height: 140px;
+		width: 534px;
+		font-size: 3.9rem; //h1 size = logo size
+		// margin-left: 1rem; //align image/text with container/menu
+	}
 }
 
 .tagline {
 	display: inline;
 	position: absolute;
-	font-size: 2.7rem;
 	right: 2rem;
-	top: 75px;
+	top: 44px;
+	font-size: 2.2rem;
 }
 
 .wrap {
@@ -36,8 +47,8 @@ font-size: 3.9rem; //h1 size = logo size
 }
 
 /*********************
-HEADER STYLES
-*********************/
+	HEADER STYLES
+	*********************/
 
 #sitelogo {
 	height: 160px;
@@ -45,17 +56,18 @@ HEADER STYLES
 	position: relative;
 }
 
-.tagline {
-	// position: relative;
-	// display: inline-block;
-	// font-size: 1.8rem;
-	// margin: 20px 0px 10px;
-	// top: -18px;
+/*********************
+	NAVIGATION STYLES
+	*********************/
+
+//testimonial slides have a min-height assigned to avoid growing and shrinking
+#container .bne-testimonial-slider.bne-flexslider .slides > li {
+	display: none;
+	-webkit-backface-visibility: hidden;
+	min-height: 250px;
 }
 
-/*********************
-NAVIGATION STYLES
-*********************/
+
 .header {
 	.nav {
 		background: transparent;
@@ -67,24 +79,24 @@ NAVIGATION STYLES
 			position: relative;
 
 			a {
-				color: @white;
+				color: @red-dk;
 
-				&:hover, &:focus {
-					color: @goldenrod;
-					background-color: darken(@red, 15%);
+				&:hover,
+				&:focus {
+					color: @red-lt;
+					background-color: @tintlighter;
 				}
 			}
-			&:first-child {
-			}
-			&:last-child {
-			}
+
+
 
 			/*
-			plan your menus and drop-downs wisely.
-			*/
-			ul.sub-menu, ul.children {
+				plan your menus and drop-downs wisely.
+				*/
+			ul.sub-menu,
+			ul.children {
 				margin-top: 0;
-				border: 1px solid #ccc;
+				border: 1px solid @white;
 				border-top: 0;
 				position: absolute;
 				display: none;
@@ -99,13 +111,16 @@ NAVIGATION STYLES
 						width: 180px;
 						border-bottom: 1px solid @white;
 
-						&:link, &:visited {
-							background-color: @goldenrod;
-							color: darken(@red-dk, 15%);
+						&:link,
+						&:visited {
+							background-color: @tintlighter;
+							color: @red;
 						}
-						&:hover, &:focus, &:active {
-							background-color: @red;
-							color: @goldenrod;
+						&:hover,
+						&:focus,
+						&:active {
+							background-color: @tintlightest;
+							color: @red-lt;
 						}
 					}
 					&:first-child {
@@ -120,36 +135,28 @@ NAVIGATION STYLES
 			}
 
 			/* highlight sub-menu current page */
-			li.current-menu-item, li.current_page_item, li.current-page-ancestor {
-				a {
-				}
-			}
+
 			/* showing sub-menus */
 			&:hover ul {
 				top: auto;
 				display: block;
 			}
 		}
-
-
 	}
 
 	/* end .menu ul li */
 
 	/* highlight current page */
-	li.current-menu-item, li.current_page_item, li.current-page-ancestor {
-		a {
-		}
-}
 
-/* end current highlighters */
+
+	/* end current highlighters */
 }
 
 /* end .nav */
 
 /*********************
-SIDEBARS & ASIDES
-*********************/
+	SIDEBARS & ASIDES
+	*********************/
 
 .sidebar {
 	// margin-top: 1em;
@@ -166,18 +173,15 @@ SIDEBARS & ASIDES
 
 	ul {
 		li {
-			margin-bottom: 0.75em;
+			margin-bottom: .75em;
 
-			&:first-child {
-			}
-			&:last-child {
-			}
-			a {
-			}
+
+
+
 
 			/* deep nesting */
 			ul {
-				margin-top: 0.75em;
+				margin-top: .75em;
 				padding-left: 1em;
 			}
 		}
@@ -187,25 +191,14 @@ SIDEBARS & ASIDES
 
 
 /*********************
-FOOTER STYLES
-*********************/
+	FOOTER STYLES
+	*********************/
 
 /*
-you'll probably need to do quite a bit
-of overriding here if you styled them for
-mobile. Make sure to double check these!
-*/
-.footer-links {
-	ul {
-		li {
-			a {
-				&:hover {
-				}
-			}
-			ul {
-			}
-		}
-	}
-}
+	you'll probably need to do quite a bit
+	of overriding here if you styled them for
+	mobile. Make sure to double check these!
+	*/
+
 
 /* end .footer-links */

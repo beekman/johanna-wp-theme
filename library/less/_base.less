@@ -26,6 +26,11 @@ and will be used across all viewports.
 13. FOOTER STYLES
 
 ******************************************************************/
+#container .bne-testimonial-slider.bne-flexslider .slides > li {
+	display: none;
+	-webkit-backface-visibility: hidden;
+	min-height: 350px;
+}
 
 dl.gallery-item {
 	float: left;
@@ -37,7 +42,10 @@ dl.gallery-item {
 .past-events .css-events-list {
 	color: #aeaeae;
 	a {
-		&:hover, &:active, &:visited, &:link {
+		&:hover,
+		&:active,
+		&:visited,
+		&:link {
 			color: #aeaeae;
 		}
 	}
@@ -45,17 +53,17 @@ dl.gallery-item {
 
 
 .style-four .testimonials-meta {
-	margin: 0.5rem 1.5rem 1.5rem;
+	margin: .5rem 1.5rem 1.5rem;
 }
 
 #content .style-four .testimonials-content {
-    background: white(0.5) none repeat scroll 0% 0%;
-    border: 1px solid white(0.7);
-    box-shadow: 0px 1px 1px black(0.1);
-    display: block;
-    padding: 0 1rem;
-    position: relative;
-    font-family: @sans-serif;
+	background: white(.5) none repeat scroll 0 0;
+	border: 1px solid white(.7);
+	box-shadow: 0 1px 1px black(.1);
+	display: block;
+	padding: 0 1rem;
+	position: relative;
+	font-family: @sans-serif;
 }
 
 .sidebar {
@@ -75,11 +83,11 @@ dl.gallery-item {
 }
 
 .entry-image {
-	float:left;
+	float: left;
 	padding-right: 1rem;
 }
 
-.wp-playlist-item>.wp-playlist-caption {
+.wp-playlist-item > .wp-playlist-caption {
 	white-space: normal;
 
 	.wp-playlist-item-title {
@@ -92,16 +100,18 @@ dl.gallery-item {
 
 //additional space between post author and post date for featured posts widget
 .featured-posts-widget > div:nth-child(3) > div:nth-child(2) > span:nth-child(2) {
-	margin-left: 0.33rem;
+	margin-left: .33rem;
 }
 
-span.wpcf7-list-item { // contact form checkbox LI's on separate rows
+span.wpcf7-list-item {
+	// contact form checkbox LI's on separate rows
 	display: block;
 	text-align: left;
 }
 
 
-header.header .wrap nav ul, header.header .wrap nav ol {
+header.header .wrap nav ul,
+header.header .wrap nav ol {
 	margin: 0;
 }
 header.header .wrap nav ul.nav {
@@ -114,15 +124,14 @@ div.post div.entry-utility {
 	visibility: hidden;
 }
 .ivycat-post {
-	padding: 0em 1em;
+	padding: 0 1em;
 }
 
 #main article {
 	padding: 0;
 	margin: 0 10px 0 10px;
 }
-header.article-header p.byline {
-}
+
 #inner-content {
 	// background-color: @white;
 }
@@ -133,96 +142,137 @@ header.article-header p.byline {
 }
 
 
-
-//site banner formatting
-h1.logo > b:nth-child(2)::first-letter { //for the plain text rendering of the "J"
-		// font-family: "Nothing You Could Do",cursive;
-		font-size: 6.4rem;
-		letter-spacing: -2.5rem; //tucks "ohanna" closer to the J
-}
-
-h1.logo { //display styled text placeholder/no images logo-covered by logo
-	height: 125px;
-	width: 250px;
-	margin-left: 0;
+h1.logo {
+	//margin: 0 0 0 1rem; //align image/text with container/menu
 	position: relative;
-	display: inline-block;
-	margin: 0;
-	text-overflow: hidden;
-	letter-spacing: normal;
+	display: block;
+	line-height: 1;
+	//padding-top: 44px; //align h1 with logo letters
+	// font-family: 'Kaushan Script', script;
+	// font-size: 3.4rem;
+	// overflow: hidden; //so the text doesn't bulge out from under the span img
 
-	b { //for "ohanna" plain text
-	display: inline-block;
-	font-family: 'Kaushan Script', script;
-	font-size: 4.2rem;
-	font-weight: normal;
-	letter-spacing: normal;
-	padding-top: 2rem;
-	margin:-9999px;
+	span {
+		//image overlaid on top of text heading
+		// margin-top: -44px;
+		// margin-left: -1rem;
+		position: absolute;
+		background-image: url(../images/logo-johanna-beekman.png);
+		background-attachment: scroll;
+		background-clip: border-box;
+		background-size: 100% 100%;
+		width: 286px;
+		height: 75px;
+		background-repeat: no-repeat;
+	}
+
+	& > b {
+		display: none;
+		visibility: hidden;
 	}
 }
+//
+// h1.logo {
+//     	padding: 0;
+//         line-height: 1;
+//         margin: 0;
+//     span {
+//         width: 200px;
+//         height: 43px;
+//     }
+//     > b {
+// 	display: none;
+//     }
+// }
 
-h1.logo span { //image overlaid on top of text heading
-// margin-top: -44px;
-// margin-left: -1rem;
-position: absolute;
-width: 100%;
-height: 100%;
-background-image: url(../images/logo-johanna-yellow.gif);
-background-attachment: scroll;
-background-clip: border-box;
-background-size: 100% 100%;
-background-repeat: no-repeat;
+//site banner formatting
+// h1.logo > b:nth-child(2)::first-letter { //for the plain text rendering of the "J"
+// 		// font-family: "Nothing You Could Do",cursive;
+// 		font-size: 6.4rem;
+// 		letter-spacing: -2.5rem; //tucks "ohanna" closer to the J
+// }
+
+// h1.logo { //display styled text placeholder/no images logo-covered by logo
+// 	height: 125px;
+// 	width: 350px;
+// 	margin-left: 0;
+// 	position: relative;
+// 	display: inline-block;
+// 	margin: 0;
+// 	text-overflow: hidden;
+// 	letter-spacing: normal;
+//
+// 	// b { //for "ohanna" plain text
+// 	// display: inline-block;
+// 	// font-family: 'Kaushan Script', script;
+// 	// font-size: 4.2rem;
+// 	// font-weight: normal;
+// 	// letter-spacing: normal;
+// 	// padding-top: 2rem;
+// 	// margin:-9999px;
+// 	// }
+// }
+
+h1.logo span {
+	//image overlaid on top of text heading
+	// margin-top: -44px;
+	// margin-left: -1rem;
+	position: absolute;
+	background-image: url(../images/logo-johanna-beekman.png);
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
 }
 
 
 .tagline {
 	padding-left: 1rem;
-	position: relative;
 	font-size: 2.75rem;
-	display: inline-block;
+	display: block;
 	font-size: 1.8rem;
-	text-align: right;
 	font-family: 'Kaushan Script', script;
 	vertical-align: bottom;
+	top: 5rem;
 
 	a {
-		color: @goldenrod;
+		color: @red;
 
-		&:link, &:visited {
-			color:  @goldenrod;
+		&:link,
+		&:visited {
+			color: @red;
 			text-decoration: none;
 		}
 
-		&:hover, &:focus, &:active, &:visited:hover,  &:visited:focus {
-			color: lighten(@goldenrod,8%);
+		&:hover,
+		&:focus,
+		&:active,
+		&:visited:hover,
+		&:visited:focus {
+			color: @red-lt;
 			text-decoration: none;
 		}
 	}
 }
 
-// .tagline a:visited:focus, .tagline a:visited:hover {
-// 	color: lighten(@goldenrod,15%);
-// 	text-decoration: none;
-// }
-
 .site-id {
-	width:100%;
-	margin: 1rem; //give logo and tagline some breathing room
+	width: 100%;
+	margin-top: 0;
 	position: relative;
+	height: 150px;
 }
 // fixes vertical positioning for logo
 
-#sitelogo h1 {
-	font-size: 2.6rem;
-	line-height: 0;
-}
+// .site-id h1 {
+// 	font-size: 2.6rem;
+// 	line-height: 0;
+// }
 
 //********************
 // 01. GENERAL STYLES
 // ********************
-html, body {
-
+html,
+body {
 	// height: 100%;
 }
 body {
@@ -245,43 +295,51 @@ body {
 .under-posts {
 	padding: 0 1rem;
 }
-#container {
-}
+
 
 // ********************
 // 04. LINK STYLES
 // ********************
-a, a:visited {
+a,
+a:visited {
 	color: @link-color;
 	text-decoration: none;
 
-	 // on hover
-	&:hover, &:focus {
+	// on hover
+	&:hover,
+	&:focus {
 		color: @link-hover;
 		text-decoration: underline;
 	}
 
-	 // on click
+	// on click
 	&:active {
-		color: darken(@link-hover, 10%);
+		color: @red-dk;
 	}
 
-	 // mobile tap color
+	// mobile tap color
 	&:link {
-
-
 		// this highlights links on iPhones/iPads.
 		// so it basically works like the :hover selector
 		// for mobile devices.
 
-		-webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
+		-webkit-tap-highlight-color: rgba(0, 0, 0, .3);
 	}
 }
 
 //******************************************************************
 // 05. H1, H2, H3, H4, H5 STYLES
 // *****************************************************************
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5 {
 	font-family: 'Open Sans', sans-serif;
 	text-rendering: optimizelegibility;
 	font-weight: 300;
@@ -291,25 +349,30 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 		text-decoration: none;
 	}
 }
-h1, .h1 {
+h1,
+.h1 {
 	font-size: 2.5em;
 	line-height: 1.333em;
 	font-weight: bold;
 }
-h2, .h2 {
+h2,
+.h2 {
 	font-size: 1.75em;
 	line-height: 1.4em;
-	margin-bottom: 0.375em;
+	margin-bottom: .375em;
 }
-h3, .h3 {
+h3,
+.h3 {
 	font-size: 1.125em;
 }
-h4, .h4 {
+h4,
+.h4 {
 	font-size: 1.1em;
 	font-weight: 700;
 }
-h5, .h5 {
-	font-size: 0.846em;
+h5,
+.h5 {
+	font-size: .846em;
 	line-height: 2.09em;
 	text-transform: uppercase;
 	letter-spacing: 2px;
@@ -319,35 +382,28 @@ h5, .h5 {
 // 06. HEADER STYLES
 // ********************
 .header {
-	background-color: @red;
-	background-image: url(../images/back-cover-banner.jpg);
-	background-size: cover;
-
+	background-color: transparent;
 
 	#inner-header {
 		background-color: transparent;
 		// box-shadow: 2px 0 5px 0;
 	}
-	#logo {
-	}
+
 	nav {
 		ul.nav {
-			background-color: transparent;
+			background-color: @tintdarker;
 
 			li {
 				a {
-					&:link, &:visited {
-						color: @goldenrod;
-							// this highlights links on iPhones/iPads.
-							// so it basically works like the :hover selector
-							// for mobile devices.
+					&:link,
+					&:visited {
+						color: @white;
+						// this highlights links on iPhones/iPads.
+						// so it basically works like the :hover selector
+						// for mobile devices.
 
-						-webkit-tap-highlight-color: rgba(255, 255, 255, 0.3);
+						-webkit-tap-highlight-color: rgba(255, 255, 255, .3);
 					}
-				}
-				&:first-child {
-				}
-				&:last-child {
 				}
 			}
 		}
@@ -367,7 +423,7 @@ h5, .h5 {
 
 
 .nav {
-	border: 0px solid @red-dk;
+	border: 0 solid @red-dk;
 	border-bottom: 0;
 
 	li {
@@ -375,10 +431,10 @@ h5, .h5 {
 			display: block;
 			text-decoration: none;
 			// font-variant: small-caps;
-			padding: 0px 10px;
+			padding: 0 10px;
 			margin-bottom: 0;
 			background-color: transparent;
-			border-bottom: 0px solid #ccc;
+			border-bottom: 0 solid #cccccc;
 			font-size: 1.1em;
 
 
@@ -386,33 +442,20 @@ h5, .h5 {
 			// to even declare hover styles here, you can do it in
 			// the style.scss file where it's relevant. We want to
 			// keep this file as small as possible!
+		}
 
-			&:hover, &:focus {
-			}
-		}
-		&:first-child {
-		}
-		&:last-child {
-		}
+
 
 		// so you really have to rethink your dropdowns for mobile.
 		// you don't want to have it expand too much because the
 		// screen is so small. How you manage your menu should
 		// depend on the project. Here's some great info on it:
 		// http://www.alistapart.com/articles/organizing-mobile/
-		ul.sub-menu, ul.children {
+		ul.sub-menu,
+		ul.children {
 			li {
 				a {
 					padding-left: 30px;
-
-					&:hover, &:focus {
-					}
-					&:link {
-					}
-				}
-				&:first-child {
-				}
-				&:last-child {
 				}
 			}
 		}
@@ -421,10 +464,7 @@ h5, .h5 {
 	// end .menu li
 
 	// highlight current page
-	li.current-menu-item, li.current_page_item, li.current_page_ancestor {
-		a {
-		}
-	}
+
 
 	// end current highlighters
 }
@@ -437,98 +477,51 @@ h5, .h5 {
 
 #content {
 	margin-top: 0;
+}
 
-	#inner-content {
-	}
-}
-.hentry {
-	header {
-	}
-	footer {
-	}
-}
 
 // end .hentry
-.single-title, .page-title {
-}
-.single-title {
-}
-.page-title {
-}
-.archive-title {
-}
+
+
+
+
 
 // want to style individual post classes? Booya!
-.post-id {
-}
+
 
 // post by id (i.e. post-3)
-.post {
-}
+
 
 // general post style
-.page {
-}
+
 
 // general article on a page style
-.attachment {
-}
+
 
 // general style on an attatchment
-.sticky {
-}
+
 
 // sticky post style
-.hentry {
-}
+
 
 // hentry class
-.category-slug {
-}
+
 
 // style by category (i.e. category-videos)
-.tag-slug {
-}
+
 
 // style by tag (i.e. tag-news)
 
 // post meta
 .byline {
-	color: #999;
-
-	time {
-	}
+	color: #999999;
 }
 
 // entry content
 .entry-content {
-	p {
-	}
-	ul, ol, table, dl {
-	}
-	ul, ol {
-		li {
-		}
-	}
-	ul {
-		li {
-		}
-	}
-	ol {
-		li {
-		}
-	}
-	blockquote {
-		&:before {
-		}
-	}
-	dl {
-	}
-	dt {
-	}
 	dd {
 		margin-left: 0;
-		font-size: 0.9em;
+		font-size: .9em;
 		color: #787878;
 		margin-bottom: 1.5em;
 	}
@@ -540,18 +533,16 @@ h5, .h5 {
 
 	//image alignment on a screen this size may be
 	//a bit difficult, but set below if you dare..
-	.alignleft, img.alignleft {
-	}
-	.alignright, img.alignright {
-	}
-	.aligncenter, img.aligncenter {
-	}
-	video, object {
+
+
+
+	video,
+	object {
 		max-width: 100%;
 		height: auto;
 	}
 	pre {
-		background: #eee;
+		background: #eeeeee;
 		border: 1px solid #cecece;
 		padding: 10px;
 	}
@@ -560,7 +551,7 @@ h5, .h5 {
 // end .entry-content
 .wp-caption {
 	max-width: 100%;
-	background: lighten(@goldenrod, 10%);
+	background: @white;
 	padding: 5px;
 
 	// images inside wp-caption
@@ -570,7 +561,7 @@ h5, .h5 {
 		width: 100%;
 	}
 	p.wp-caption-text {
-		font-size: 0.85em;
+		font-size: .85em;
 		margin: 4px 0 7px;
 		text-align: center;
 	}
@@ -579,28 +570,15 @@ h5, .h5 {
 
 // image gallery styles
 .gallery {
-	dl {
-		a {
-		}
-		img {
-		}
-	}
-	dt {
-	}
-	dd {
-	}
-
-
 	// gallery caption styles
-	.gallery-caption {
-	}
 }
 
 // end .gallery
 //*****************************************************************
 //09. PAGE NAVI STYLES
 //****************************************************************
-.page-navigation, .wp-prev-next {
+.page-navigation,
+.wp-prev-next {
 	margin: 1.1em 0 2.2em;
 }
 .johanna_page_navi {
@@ -614,8 +592,9 @@ h5, .h5 {
 			text-decoration: none;
 			position: relative;
 
-			&:hover, &:focus {
-				color: #f01d4f;
+			&:hover,
+			&:focus {
+				color: @red-lt;
 				text-decoration: underline;
 			}
 		}
@@ -624,21 +603,19 @@ h5, .h5 {
 	// current page link
 	li.bpn-current {
 		padding: 3px 6px;
-		border-bottom: 2px solid #f01d4f;
+		border-bottom: 2px solid @red;
 		position: relative;
 
 		a {
-
 			// hovering on current page link
-			&:hover, &:focus {
-			}
 		}
 	}
 
 	// end .johanna_page_navi .bpn-current
 
 	// common styles for page-navi links
-	li.bpn-prev-link, li.bpn-next-link {
+	li.bpn-prev-link,
+	li.bpn-next-link {
 		font-weight: 700;
 
 		a {
@@ -647,49 +624,29 @@ h5, .h5 {
 	}
 
 	// remove the bg on end links
-	li.bpn-prev-link a:hover, li.bpn-next-link a:hover, li.bpn-first-page-link a:hover, li.bpn-last-page-link a:hover {
+	li.bpn-prev-link a:hover,
+	li.bpn-next-link a:hover,
+	li.bpn-first-page-link a:hover,
+	li.bpn-last-page-link a:hover {
 		background: none;
 	}
 
 	// previous link
-	li.bpn-prev-link {
-		a {
-			&:hover, &:focus {
-			}
-		}
-	}
+
 
 	// next page link
-	li.bpn-next-link {
-		a {
-			&:hover, &:focus {
-			}
-		}
-	}
+
 
 	// first page link
-	li.bpn-first-page-link {
-		a {
-			&:hover, &:focus {
-			}
-		}
-	}
+
 
 	// last page link
-	li.bpn-last-page-link {
-		a {
-			&:hover, &:focus {
-			}
-		}
-	}
 }
 
 // end .johanna_page_navi
 
 // fallback previous & next links
 .wp-prev-next {
-	ul {
-	}
 	.prev-link {
 		float: left;
 	}
@@ -706,17 +663,9 @@ h5, .h5 {
 
 // h3 comment title
 #comments {
-
 	// number of comments span
-	span {
-	}
 }
-.comment-nav {
-	ul {
-		li {
-		}
-	}
-}
+
 .commentlist {
 	li {
 		position: relative;
@@ -724,7 +673,7 @@ h5, .h5 {
 		overflow: hidden;
 		list-style-type: none;
 		margin-bottom: 1.5em;
-		padding: 0.7335em 10px;
+		padding: .7335em 10px;
 
 		&:last-child {
 			margin-bottom: 0;
@@ -732,28 +681,16 @@ h5, .h5 {
 		ul.children {
 			margin: 0;
 
-			li {
-			}
+
 
 			// variations
-			.comment {
-			}
-			.alt {
-			}
-			.odd {
-			}
-			.even {
-			}
-			.depth-1 {
-			}
+
+
+
+
+
 
 			// change number for different depth
-			.byuser {
-			}
-			.bypostauthor {
-			}
-			.comment-author-admin {
-			}
 		}
 
 		// end .commentlist li ul.children
@@ -771,44 +708,29 @@ h5, .h5 {
 		margin-top: 0;
 		padding-bottom: 0;
 	}
-	li.depth-2 {
-	}
-	li.depth-3 {
-	}
-	li.depth-4 {
-	}
-	li.depth-5 {
-	}
+
+
+
+
 
 	// general comment classes
-	.alt {
-	}
+
 	.odd {
-		background: #eee;
+		background: @white;
 	}
 	.even {
 		background: #fefefe;
 	}
-	.parent {
-	}
-	.comment {
-	}
-	.children {
-	}
-	.pingback {
-	}
-	.bypostauthor {
-	}
-	.comment-author {
-	}
-	.comment-author-admin {
-	}
-	.thread-alt {
-	}
-	.thread-odd {
-	}
-	.thread-even {
-	}
+
+
+
+
+
+
+
+
+
+
 
 	// vcard
 	.vcard {
@@ -817,15 +739,12 @@ h5, .h5 {
 		cite.fn {
 			font-weight: 700;
 			font-style: normal;
-
-			a.url {
-			}
 		}
 		time {
 			float: right;
 
 			a {
-				color: #999;
+				color: #999999;
 				text-decoration: none;
 
 				&:hover {
@@ -833,35 +752,28 @@ h5, .h5 {
 				}
 			}
 		}
-		img.photo {
-		}
+
 		img.avatar {
 			position: absolute;
 			left: 10px;
 			padding: 2px;
-			border: 1px solid #cecece;
-			background: #fff;
+			border: 1px solid @white;
+			background: #ffffff;
 		}
 	}
 
 	// end .commentlist .vcard
 
 	// comment meta
-	.comment-meta {
-		a {
-		}
-	}
-	.commentmetadata {
-		a {
-		}
-	}
+
+
 
 	// comment content
 	.comment_content {
 		margin-left: 50px;
 
 		p {
-			margin: 0.7335em 0 1.5em;
+			margin: .7335em 0 1.5em;
 			font-size: 1em;
 			line-height: 1.5em;
 		}
@@ -875,13 +787,14 @@ h5, .h5 {
 		float: right;
 		background: #4598bb;
 		padding: 3px 5px;
-		color: #fff;
-		opacity: 0.65;
+		color: #ffffff;
+		opacity: .65;
 		margin-bottom: 10px;
 		font-weight: 700;
-		font-size: 0.9em;
+		font-size: .9em;
 
-		&:hover, &:focus {
+		&:hover,
+		&:focus {
 			opacity: 1;
 		}
 	}
@@ -895,37 +808,42 @@ h5, .h5 {
 // 11. COMMENT FORM STYLES
 //****************************************************************
 
-.wpcf7-text, .wpcf7-textarea {
+.wpcf7-text,
+.wpcf7-textarea {
 	width: 100%;
 }
 
-.wpcf7-textarea {}
+
 
 .respond-form {
 	margin: 1.5em 10px;
 	padding-bottom: 2.2em;
 
 	form {
-		margin: 0.75em 0;
+		margin: .75em 0;
 
 		li {
 			list-style-type: none;
 			clear: both;
-			margin-bottom: 0.7335em;
+			margin-bottom: .7335em;
 
-			label, small {
+			label,
+			small {
 				display: none;
 			}
 		}
-		input[type=text], input[type=email], input[type=url], textarea {
+		input[type=text],
+		input[type=email],
+		input[type=url],
+		textarea {
 			padding: 3px 6px;
 			background: @white;
-			border: 2px solid darken(@goldenrod, 20%);
+			border: 2px solid @red-lt;
 			line-height: 1.5em;
 			width: 100%;
 
 			&:focus {
-				background: #fff;
+				background: #ffffff;
 			}
 
 			// form validation
@@ -939,7 +857,9 @@ h5, .h5 {
 				box-shadow: none;
 			}
 		}
-		input[type=text], input[type=email], input[type=url] {
+		input[type=text],
+		input[type=email],
+		input[type=url] {
 			max-width: 400px;
 			min-width: 250px;
 		}
@@ -953,8 +873,8 @@ h5, .h5 {
 
 // comment submit button
 #submit {
-	background-color: lighten(@goldenrod, 10%);
-	padding: 0.3rem 0.5rem;
+	background-color: @red-lt;
+	padding: .3rem .5rem;
 	float: right;
 }
 
@@ -964,18 +884,14 @@ h5, .h5 {
 }
 
 // cancel comment reply link
-#cancel-comment-reply {
-	a {
-	}
-}
+
 
 // logged in comments
-.comments-logged-in-as {
-}
+
 
 // allowed tags
 #allowed_tags {
-	margin: 1.5em 10px 0.7335em 0;
+	margin: 1.5em 10px .7335em 0;
 }
 
 // no comments
@@ -989,21 +905,11 @@ h5, .h5 {
 .sidebar {
 	padding: 0 1rem;
 }
-.widgettitle {
-}
+
 .widget {
 	ul {
 		li {
-			&:first-child {
-			}
-			&:last-child {
-			}
-			a {
-			}
-
 			//deep nesting
-			ul {
-			}
 		}
 	}
 }
@@ -1013,7 +919,7 @@ h5, .h5 {
 //*******************
 footer.footer .wrap p.source-org {
 	text-align: center;
-	color: lighten(@black, 50%);
+	color: @tintdark;
 }
 footer.footer .nav {
 	background-color: @blue-lt;
@@ -1029,30 +935,8 @@ footer.footer .nav {
 
 .footer {
 	clear: both;
-
-	#inner-footer {
-	}
-	nav {
-		ul.nav {
-			li {
-				a {
-				}
-				&:first-child {
-				}
-				&:last-child {
-				}
-			}
-		}
-	}
 }
 
-.footer-links {
-	ul {
-		li {
-		}
-	}
-}
 
- // end .footer-links
-.copyright {
-}
+
+// end .footer-links

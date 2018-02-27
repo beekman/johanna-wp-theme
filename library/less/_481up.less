@@ -1,43 +1,21 @@
-/******************************************************************
-Site Name:
-Author:
-
-Stylesheet: 481px and Up Stylesheet
-
-This stylesheet is loaded for larger devices. It's set to
-481px because at 480px it would load on a landscaped iPhone.
-This isn't ideal because then you would be loading all those
-extra styles on that same mobile connection.
-
-A word of warning. This size COULD be a larger mobile device,
-so you still want to keep it pretty light and simply expand
-upon your base.less styles.
-
-******************************************************************/
-h1.logo {
-	height: 125px;
-	width: 250px;
-	//margin: 0 0 0 1rem; //align image/text with container/menu
-	position: relative;
-	display: inline-block;
-	// padding-top: 44px; //align h1 with logo letters
-	font-family: 'Kaushan Script', script;
-	font-size: 3.4rem;
-	overflow: hidden; //so the text doesn't bulge out from under the span img
-}
-
-
-
 .tagline {
-	font-size: 2.75rem;
+	padding: 0 1rem;
+	position: absolute;
+	display: block;
+	font-size: 1.4rem;
+	text-align: right;
+	top: 67px;
+	vertical-align: bottom;
 }
 
-
+h1.logo {
+	position: absolute;
+}
 /*********************
 NAVIGATION STYLES
 *********************/
 
-.nav {}
+
 
 /* .menu is clearfixed inside mixins.scss */
 .menu {
@@ -46,61 +24,49 @@ NAVIGATION STYLES
 			a {
 				color: @red-dk;
 				background-color: @tintdark;
-	/*
-	you can use hover styles here even though this size
-	has the possibility of being a mobile device.
-	*/
-	&:hover, &:focus {
-		color: @red-lt;
-		background-color: @tintlight;
-	}
-}
+				/*
+                    you can use hover styles here even though this size
+                    has the possibility of being a mobile device.
+                    */
+				&:hover,
+				&:focus {
+					color: @red-lt;
+					background-color: @tintlight;
+				}
+			}
 
-&:first-child {}
-&:last-child {}
 
-/*
-plan your menus and drop-downs wisely.
-*/
-ul.sub-menu,
-ul.children {
-	li {
-		a {
-			&:hover,
-			&:focus {}
-			&:link {}
-		}
-		&:first-child {}
-		&:last-child {}
-	}
-}
-} /* end .menu ul li */
 
-/* highlight current page */
-li.current-menu-item,
-li.current_page_item,
-li.current-page-ancestor {
-	a {}
-	}  /* end current highlighters */
+
+			/*
+                        plan your menus and drop-downs wisely.
+                        */
+		} /* end .menu ul li */
+
+		/* highlight current page */
+		/* end current highlighters */
 	} /* end .menu ul */
-	} /* end .menu */
+} /* end .menu */
 
 /*********************
-POSTS & CONTENT STYLES
-*********************/
+                                                POSTS & CONTENT STYLES
+                                                *********************/
 
 /* at this larger size, we can start to align images */
-.alignleft, img.alignleft {
+.alignleft,
+img.alignleft {
 	margin-right: 1.5em;
 	display: inline;
 	float: left;
 }
-.alignright, img.alignright {
+.alignright,
+img.alignright {
 	margin-left: 1.5em;
 	display: inline;
 	float: right;
 }
-.aligncenter, img.aligncenter {
+.aligncenter,
+img.aligncenter {
 	margin-right: auto;
 	margin-left: auto;
 	display: block;
@@ -108,16 +74,11 @@ POSTS & CONTENT STYLES
 }
 
 /*********************
-FOOTER STYLES
-*********************/
+                                                FOOTER STYLES
+                                                *********************/
 
 /*
-check your menus here. do they look good?
-do they need tweaking?
-*/
-.footer-links {
-	ul {
-		li {}
-	}
-	} /* end .footer-links */
-
+                                                check your menus here. do they look good?
+                                                do they need tweaking?
+                                                */
+/* end .footer-links */
